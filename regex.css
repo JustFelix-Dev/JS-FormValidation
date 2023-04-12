@@ -43,7 +43,7 @@ input.valid{
 }
 input.invalid{
     border: 3px solid red;
-    animation: shake 3s;
+    animation: shake .3s;
 }
 input.invalid + p {
     opacity: 1;
@@ -52,7 +52,7 @@ input.invalid + p {
 }
 
 @keyframes shake {
-10% {transform: translateX(8px);}
-12% {transform: translateX(-8px);}
-13% {transform: translateX(8px);}
+0% {transform: translateX(8px);}
+50% {transform: translateX(-8px);}
+100% {transform: translateX(8px);}
 }
