@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightyellow;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+.form--container{
+    margin: 0 auto;
+    width: 50%;
+    background:rgb(43, 41, 41);
+    padding: 1.5rem;
+}
+form{
+    /* border: 1px solid white; */
+    padding: 1rem;
+    text-align: center;
+}
+input{
+    border: 0;
+    outline: 0;
+    width: 80%;
+    height: 30px;
+    padding: 1.2rem;
+    border-radius: 7px;
+}
+h1{
+    color: white;
+}
+
+input + p {
+    padding: .5rem;
+    margin-bottom: 1rem;
+    opacity: 0;
+    height: 0;
+}
+input.valid{
+    border: 3px solid green;
+}
+input.invalid{
+    border: 3px solid red;
+    animation: shake 3s;
+}
+input.invalid + p {
+    opacity: 1;
+    color: red;
+    height: auto;
+}
+
+@keyframes shake {
+10% {transform: translateX(8px);}
+12% {transform: translateX(-8px);}
+13% {transform: translateX(8px);}
+}
